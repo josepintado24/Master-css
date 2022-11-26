@@ -1,0 +1,54 @@
+body {
+    font-family     : arial, sans-serif;
+    background: rgba(11, 39, 57, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.progressbar-container {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.progressbar-container .outer-box{
+    border-radius: 50%;
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+}
+.progressbar-container .inner-box{
+    background-color: transparent;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px rgba(128, 206, 249,0.2);
+    /* display:none; */
+}
+.progressbar-container svg{
+    position: absolute;
+}
+.progressbar-container circle{
+    fill:none;
+    stroke: url(#gradientColor);
+    stroke-width: 4px;
+    stroke-dasharray: 500px;
+    stroke-dashoffset: 500px;
+    animation: loading 1s linear infinite;
+    /* animation-iteration-count: infinite; */
+}
+@keyframes loading{
+    /* 0%{
+        stroke-dashoffset: 200px;
+    } */
+    100%{
+        stroke-dashoffset: 0px;
+    } 
+}

@@ -1,0 +1,62 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 88
+}
+body{
+    font-family:Arial,sans-serif;
+    padding:0;
+    margin:0;
+}
+.notifications{
+    width:28px;
+    margin: 100px auto;
+    animation: ring 4s 0.7s ease-in-out infinite;
+}
+.notifications .count{
+    --size: 20px;
+    font-size:8px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border: 1px solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    max-width: var(--size);
+    max-height: var(--size);
+    height: var(--size);
+    box-sizing: border-box;
+    position: relative;
+    border-radius: 50px;
+    top:10px;
+    right:5px;
+}
+
+@keyframes ring{
+    0%{
+        transform: rotate(0deg);
+    }
+    1%{
+        transform: rotate(30deg);
+    }
+    3%{
+        transform: rotate(-28deg);
+    }
+    5%{
+        transform: rotate(34deg);
+    }
+    7%{
+        transform: rotate(-32deg);
+    }
+    9%{
+        transform: rotate(30deg);
+    }
+    11%{
+        transform: rotate(30deg);
+    }
+    
+}
